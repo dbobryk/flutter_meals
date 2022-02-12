@@ -4,11 +4,9 @@ import 'package:flutter_meals/screens/meal_detail_screen.dart';
 
 class MealItem extends StatelessWidget {
   final Meal meal;
-  final Function removeItem;
 
   const MealItem(
     @required this.meal,
-    @required this.removeItem,
   );
 
   void selectMeal(BuildContext ctx) {
@@ -20,7 +18,7 @@ class MealItem extends StatelessWidget {
         .then(
       (result) {
         if (result != null) {
-          removeItem(result);
+          // removeItem(result);
         }
       },
     );
